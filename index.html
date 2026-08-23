@@ -1,10 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Мой первый сайт</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моё портфолио</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+
+    .hero {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #cbd5e1;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 90px 20px;
+    }
+
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about {
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid #334155;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #020617;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Привет, это мой первый сайт!</h1>
-  <p>Я учусь создавать сайты с помощью ChatGPT.</p>
+
+  <header>
+    <div class="hero">
+      <h1>Привет, я <span>Марс</span></h1>
+
+      <p>
+        Изучаю AI, vibe coding и создание цифровых продуктов.
+        Здесь я собираю свои проекты и навыки.
+      </p>
+
+      <a href="#projects" class="button">Посмотреть проекты</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Обо мне</h2>
+
+    <div class="about">
+      <p>
+        Я изучаю современные AI-инструменты и учусь создавать
+        сайты и веб-приложения с помощью искусственного интеллекта.
+        Моя цель — постепенно превратить эти навыки в дополнительный
+        источник дохода в интернете.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Навыки</h2>
+
+    <div class="skills">
+      <div class="card">
+        <h3>AI-инструменты</h3>
+        <p>Использование ИИ для создания контента, программ и автоматизации.</p>
+      </div>
+
+      <div class="card">
+        <h3>Vibe Coding</h3>
+        <p>Создание веб-приложений с помощью AI и естественного языка.</p>
+      </div>
+
+      <div class="card">
+        <h3>Веб-разработка</h3>
+        <p>HTML, CSS и основы JavaScript.</p>
+      </div>
+
+      <div class="card">
+        <h3>Проектирование</h3>
+        <p>Разработка идеи продукта от концепции до рабочего прототипа.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Мои проекты</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>Инженерные планы</h3>
+        <p>
+          Концепция приложения для создания планов
+          электрики, отопления, воды и других коммуникаций.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Первый сайт</h3>
+        <p>
+          Мой первый опубликованный веб-сайт,
+          созданный с помощью AI и GitHub.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Следующий проект</h3>
+        <p>
+          Здесь появится следующий проект,
+          который я создам во время обучения.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Моё портфолио
+  </footer>
+
 </body>
 </html>
