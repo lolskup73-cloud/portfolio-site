@@ -1,1 +1,3 @@
-document.querySelector(".button").textContent = "Нажми меня";
+document.querySelector(".button").addEventListener("click", function() {
+  alert("Кнопка работает!");
+});
