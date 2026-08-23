@@ -41,7 +41,7 @@
     }
 
     .button {
-  display: inline-block;
+  display: block;
   padding: 14px 28px;
   background: #38bdf8;
   color: #0f172a;
@@ -50,6 +50,9 @@
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+  display: block;
+width: fit-content;
+margin: 10px auto;        
 }
 
 .button:hover {
