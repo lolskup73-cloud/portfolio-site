@@ -38,6 +38,30 @@ nav a {
 nav a:hover {
   color: #38bdf8;
 }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(2, 6, 23, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
     header {
       min-height: 100vh;
       display: flex;
