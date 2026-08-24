@@ -14,6 +14,23 @@
   <button id="addButton">Добавить</button>
 
   <ul id="taskList"></ul>
+<script>
+  const input = document.getElementById("taskInput");
+  const button = document.getElementById("addButton");
+  const list = document.getElementById("taskList");
 
+  button.addEventListener("click", function() {
+    const task = input.value.trim();
+
+    if (task === "") return;
+
+    const item = document.createElement("li");
+    item.textContent = task;
+
+    list.appendChild(item);
+    input.value = "";
+  });
+</script>
+  
 </body>
 </html>
