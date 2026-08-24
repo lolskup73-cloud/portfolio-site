@@ -90,7 +90,15 @@ nav a:hover {
       color: #cbd5e1;
       margin-bottom: 35px;
     }
+nav {
+  gap: 12px;
+  padding: 14px 5px;
+  flex-wrap: wrap;
+}
 
+nav a {
+  font-size: 14px;
+}
     .button {
   display: block;
   padding: 14px 28px;
