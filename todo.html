@@ -42,7 +42,7 @@ function addTask(task) {
 item.addEventListener("click", function() {
   item.style.textDecoration = "line-through";
 });
-    list.appendChild(item);
+    addTask(task);
     input.value = "";
   });
 </script>
